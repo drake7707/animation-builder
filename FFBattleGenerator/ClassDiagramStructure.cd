@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="FFBattleGenerator.BLL.Animation">
+    <Position X="5.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AASAAAAAAAACCACAAAQAAAAJAAIAAAkEAABgAAABYAA=</HashCode>
+      <FileName>BLL\Animation.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Definition" />
+      <Property Name="Attribute" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="FFBattleGenerator.BLL.AnimationDef">
+    <Position X="5.25" Y="12" Width="1.5" />
+    <AssociationLine Name="Frames" Type="FFBattleGenerator.BLL.FrameDef" FixedToPoint="true">
+      <Path>
+        <Point X="6" Y="13.692" />
+        <Point X="6" Y="14" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAAAQAAAAAAAAAAAAAAAEAAAE=</HashCode>
+      <FileName>BLL\AnimationDef.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Frames" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="FFBattleGenerator.BLL.AnimationManager">
+    <Position X="4.75" Y="1.75" Width="2" />
+    <AssociationLine Name="flow" Type="FFBattleGenerator.BLL.Flow" FixedToPoint="true">
+      <Path>
+        <Point X="5.625" Y="3.823" />
+        <Point X="5.625" Y="4" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAACAAAEAgAAIAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BLL\AnimationManager.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="flow" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="FFBattleGenerator.BLL.AnimAttribute">
+    <Position X="2.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAACAAA=</HashCode>
+      <FileName>BLL\AnimAttribute.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FFBattleGenerator.BLL.CharDef">
+    <Position X="8" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAAAAAAAEQAAAAAABAAAAAAAAAAYAA=</HashCode>
+      <FileName>BLL\CharDef.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FFBattleGenerator.BLL.CharSet">
+    <Position X="8" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>BLL\CharSet.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Characters" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="FFBattleGenerator.BLL.Flow">
+    <Position X="5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIBAAAAAAA=</HashCode>
+      <FileName>BLL\Flow.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="TimeBlocks" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="FFBattleGenerator.BLL.FrameDef">
+    <Position X="5.25" Y="14" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAAAAAAAEAAAAAIABAAAAAAAAAAYAA=</HashCode>
+      <FileName>BLL\FrameDef.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FFBattleGenerator.BLL.Text">
+    <Position X="8" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAYAA=</HashCode>
+      <FileName>BLL\Text.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Definition" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="FFBattleGenerator.BLL.TextDef">
+    <Position X="8" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>BLL\TextDef.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="CharacterSet" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="FFBattleGenerator.BLL.TimeBlock">
+    <Position X="5" Y="5.5" Width="1.75" />
+    <AssociationLine Name="Animations" Type="FFBattleGenerator.BLL.Animation" ManuallyRouted="true">
+      <Path>
+        <Point X="6" Y="7.027" />
+        <Point X="6" Y="7.5" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>EgAAAAAAAAAAAAAAAAAAAAAQAAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BLL\TimeBlock.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Animations" />
+      <Property Name="Texts" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="FFBattleGenerator.DAL.AnimationMapper">
+    <Position X="11.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAABAIAAAAAAACAAAAACAAAAAAA=</HashCode>
+      <FileName>DAL\AnimationMapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FFBattleGenerator.DAL.AnimationsWrapper">
+    <Position X="11.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAIgAAAAAAAAA=</HashCode>
+      <FileName>DAL\AnimationsWrapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FFBattleGenerator.Form1" Collapsed="true">
+    <Position X="5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAQQJAgEACAQCgAAAAiAAIACEAAIAAABEQQAQAAAgAA=</HashCode>
+      <FileName>Form1.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="anim" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="FFBattleGenerator.ResourceManager">
+    <Position X="9.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAAAAAAAEABAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>ResourceManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>
